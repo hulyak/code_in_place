@@ -13,7 +13,9 @@ sample worlds supplied in the starter folder.
 
 
 def main():
-    """repair each column and move to next one until you reach the wall"""
+    """
+    repair each column and move to next one until you reach the wall
+    """
 
     while front_is_clear():
         column_repair()

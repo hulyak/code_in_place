@@ -13,5 +13,5 @@ def cover_one_side():
         move()
 
 
-# if __name__ == '__main__':
-#     run_karel_program()
+if __name__ == '__main__':
+    run_karel_program()
