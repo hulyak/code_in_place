@@ -12,7 +12,7 @@ from simpleimage import SimpleImage
 def mirror_image(filename):
     """
     Read an image from the file specified by filename.
-    Returns a new images that includes the original image
+    Returns a new image that includes the original image
     and its mirror reflection.
     Returns the resulting "redscreened" image.
     """
@@ -37,10 +37,10 @@ def main():
     You should store the return value (image) and then
     call .show() to visualize the output of your program.
     """
-    original = SimpleImage('burrito.jpg')
+    original = SimpleImage('burrito.jpeg')
     original.show()
 
-    mirrored = mirror_image('burrito.jpg')
+    mirrored = mirror_image('burrito.jpeg')
     mirrored.show()
 
 
