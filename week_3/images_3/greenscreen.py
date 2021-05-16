@@ -39,13 +39,13 @@ def main():
     You should store the return value (image) and then
     call .show() to visualize the output of your program.
     """
-    original_stop = SimpleImage('stop.png')
+    original_stop = SimpleImage('images/stop.png')
     original_stop.show()
 
-    original_leaves = SimpleImage('leaves.png')
+    original_leaves = SimpleImage('images/leaves.png')
     original_leaves.show()
 
-    stop_leaves_replaced = redscreen('stop.png', 'leaves.png')
+    stop_leaves_replaced = redscreen('images/stop.png', 'images/leaves.png')
     stop_leaves_replaced.show()
 
 

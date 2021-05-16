@@ -63,16 +63,16 @@ def main():
     You should store the return value (image) and then
     call .show() to visualize the output of your program.
     """
-    flower = SimpleImage('flower.png')
+    flower = SimpleImage('images/flower.png')
     flower.show()
 
     darker(flower)
     flower.show()
 
-    red_flower = red_channel('flower.png')
+    red_flower = red_channel('images/flower.png')
     red_flower.show()
 
-    grayscale_flower = grayscale('flower.png')
+    grayscale_flower = grayscale('images/flower.png')
     grayscale_flower.show()
 
 
