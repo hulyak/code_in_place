@@ -1,24 +1,34 @@
+#!/usr/bin/env python3
+
 """
 Stanford CS106AP SimpleImage
+
 Written by Nick Parlante, Sonja Johnson-Yu, and Nick Bowman.
  -7/2019  version, has file reading, pix, foreach, hidden get/setpix
+
 SimpleImage Features:
 Create image:
   image = SimpleImage.blank(400, 200)   # create new image of size
   image = SimpleImage('foo.jpg')        # create from file
+
 Access size
   image.width, image.height
+
 Get pixel at x,y
   pix = image.get_pixel(x, y)
   # pix is RGB tuple like (100, 200, 0)
+
 Set pixel at x,y
   image.set_pixel(x, y, pix)   # set data by tuple also
+
 Get Pixel object at x,y
   pixel = image.get_pixel(x, y)
   pixel.red = 0
   pixel.blue = 255
+
 Show image on screen
   image.show()
+
 The main() function below demonstrates the above functions as a test.
 """
 
@@ -46,7 +56,6 @@ class Pixel(object):
     Supports set/get .red .green .blue
     and get .x .y
     """
-
     def __init__(self, image, x, y):
         self.image = image
         self._x = x
