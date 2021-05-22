@@ -56,6 +56,7 @@ class Pixel(object):
     Supports set/get .red .green .blue
     and get .x .y
     """
+
     def __init__(self, image, x, y):
         self.image = image
         self._x = x

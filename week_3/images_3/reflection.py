@@ -11,22 +11,44 @@ reflection of the top half.
 # Its depends on the Pillow package being installed
 from simpleimage import SimpleImage
 
+DEFAULT_FILE = 'images/mt-rainier.jpg'
+
 
 def make_reflected(filename):
     image = SimpleImage(filename)
-    # TODO: your code here.
-    return image
+    width = image.width
+    height = image.height
+   # make a new blank image
+    mirror = SimpleImage.blank(width, height * 2)
+
+  # get the coordinates of the pixels
+    for y in range(height):
+        for x in range(width):
+            pixel = image.get_pixel(x, y)
+            mirror.set_pixel(x, y, pixel)
+            mirror.set_pixel(x, (height * 2) - (y + 1), pixel)
+
+    return mirror
+
+
+def get_file():
+    # Read image file path from user, or use the default file
+    filename = input('Enter image file (or press enter for default): ')
+    if filename == '':
+        filename = DEFAULT_FILE
+    return filename
 
 
 def main():
-    """
-    This program tests your highlight_fires function by displaying
-    the original image of a fire as well as the resulting image
-    from your highlight_fires function.
-    """
-    original = SimpleImage('images/mt-rainier.jpg')
+    # Get file and load image
+    filename = get_file()
+
+    # Show the original image
+    original = SimpleImage(filename)
     original.show()
-    reflected = make_reflected('images/mt-rainier.jpg')
+
+    # Show the reflected image
+    reflected = make_reflected(filename)
     reflected.show()
 
 
