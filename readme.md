@@ -13,6 +13,20 @@ CS106A is one of the most popular courses at Stanford University, taken by almos
 - Week 5 - Dictionaries, Files, Data Science - Section 5 Data
 - Week 6 - Final Project
 
+## Setup
+
+```bash
+> python3.9 --version # Python 3.9.0
+
+# Create a Virtual Environment
+> cd code_in_place
+> python3 -m venv env
+> source env/bin/activate
+
+# deactivate the virtual environment
+> deactivate
+```
+
 ## Resources
 
 - [Karel documentation website](https://compedu.stanford.edu/karel-reader/docs/python/en/intro.html)
