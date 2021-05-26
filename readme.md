@@ -31,3 +31,4 @@ CS106A is one of the most popular courses at Stanford University, taken by almos
 
 - [Karel documentation website](https://compedu.stanford.edu/karel-reader/docs/python/en/intro.html)
 - [Python](https://codeinplace2021.github.io/pythonreader/en/intro/)
+- [Practical Python](https://practical.learnpython.dev/)
